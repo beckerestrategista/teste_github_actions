@@ -2,8 +2,7 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   schedule:
-    - cron: '40 9 * * *'
-  workflow_dispatch:
+    - cron: '0 13 * * *'  # Executa todos os dias às 10h no horário de Brasília
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
