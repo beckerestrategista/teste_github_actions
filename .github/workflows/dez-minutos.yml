@@ -1,20 +1,20 @@
-name: Executar teste.py a cada 10 minutos
+# name: Executar teste.py a cada 10 minutos
 
-on:
-  schedule:
-    - cron: '*/10 * * * *'  # Executa a cada 10 minutos (UTC)
+# on:
+#   schedule:
+#     - cron: '*/10 * * * *'  # Executa a cada 10 minutos (UTC)
 
-jobs:
-  run-script:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Clonar repositório
-        uses: actions/checkout@v4
+# jobs:
+#   run-script:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Clonar repositório
+#         uses: actions/checkout@v4
 
-      - name: Instalar Python teste
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
+#       - name: Instalar Python teste
+#         uses: actions/setup-python@v5
+#         with:
+#           python-version: '3.x'
 
-      - name: Executar script teste.py
-        run: python teste.py
+#       - name: Executar script teste.py
+#         run: python teste.py
